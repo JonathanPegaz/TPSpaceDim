@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinActivity">
+
+    <ImageView
+        android:id="@+id/win_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/win_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/win_table"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/window" />
+
+    <ImageView
+        android:id="@+id/win_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/win_title"
+        android:scaleType="centerInside"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/win_background"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/you_win" />
+
+    <ImageView
+        android:id="@+id/win_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/win_score"
+        app:layout_constraintBottom_toBottomOf="@id/win_table"
+        app:layout_constraintEnd_toEndOf="@id/win_table"
+        app:layout_constraintStart_toStartOf="@id/win_table"
+        app:layout_constraintTop_toTopOf="@id/win_table"
+        app:layout_constraintVertical_bias="0.131"
+        app:srcCompat="@drawable/score" />
+
+    <ImageButton
+        android:id="@+id/win_exit_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:contentDescription="@string/exit_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/close_btn" />
+
+    <ImageButton
+        android:id="@+id/win_replay_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:contentDescription="@string/win_replay_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/replay_btn" />
+
+</android.support.constraint.ConstraintLayout>
